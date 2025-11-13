@@ -11,7 +11,7 @@ $routes->get('pages', 'pages::index');
 $routes->get('/admin', 'bansos::admin');
 
 
-$routes->get('/login', 'pages::login');
+$routes->get('/login', 'bansos::index');
 
 
 //Data User
