@@ -10,7 +10,7 @@
         /* Pengaturan Dasar dan Latar Belakang */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #363636; /* Latar belakang abu-abu gelap */
+            background-color: #f9f9f9; /* Latar belakang abu-abu gelap */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -268,7 +268,7 @@
 <body>
 
     <div class="login-card">
-        <a href="#" class="back-link">
+        <a href="<?= base_url('pages')?>" class="back-link">
             <i class="fas fa-arrow-left"></i>
             Kembali ke Beranda
         </a>
@@ -279,7 +279,7 @@
             <p>Akses dashboard pribadi Anda untuk memantau status bantuan sosial</p>
         </div>
 
-        <form action="#">
+        <form action="<?= base_url('admin') ?>?>">
             <div class="input-group">
                 <label for="email">Email atau NIK</label>
                 <div class="input-field">
