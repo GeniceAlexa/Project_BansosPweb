@@ -13,11 +13,6 @@ class bansos extends BaseController
         $this->data = new Data();
     }
 
-    public function index()
-    {
-        return view('login/login');
-    }
-
     public function dokum()
     {
         return view('layout/dokum');

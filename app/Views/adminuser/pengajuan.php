@@ -249,8 +249,8 @@
           <img src="https://i.pravatar.cc/40" alt="user">
           <span class="text-white fw-medium">Admin</span>
         </div>
-        <li><a href="#"><ion-icon name="document-text-outline" class="me-2"></ion-icon><span>Dokumentasi</span></a></li>
-        <li><a href="#"><ion-icon name="people-outline" class="me-2"></ion-icon><span>Penerima</span></a></li>
+        <li><a href="#"><ion-icon name="document-text-outline" class="me-2"></ion-icon><span>Data Penerima</span></a></li>
+        <li><a href="#"><ion-icon name="people-outline" class="me-2"></ion-icon><span>Dokumetasi</span></a></li>
       </div>
       <li class="logout"><a href="#"><ion-icon name="log-out-outline" class="me-2"></ion-icon><span>Sign Out</span></a></li>
     </ul>

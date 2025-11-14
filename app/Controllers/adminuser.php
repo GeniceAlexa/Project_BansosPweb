@@ -12,6 +12,11 @@ class adminuser extends BaseController
         $this->adminuserModel = new adminuserModel();
     }
 
+    public function login()
+    {
+        return view('login/login');
+    }
+    
     public function index() : string 
     {
         $data =[

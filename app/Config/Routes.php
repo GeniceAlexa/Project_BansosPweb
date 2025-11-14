@@ -11,7 +11,7 @@ $routes->get('/', 'Pages::index');
 $routes->get('pages', 'Pages::index');
 
 // Halaman login
-$routes->get('/login', 'bansos::index');
+$routes->get('/login', 'adminuser::login');
 
 //Adminuser
 
