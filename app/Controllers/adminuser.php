@@ -16,6 +16,11 @@ class adminuser extends BaseController
     {
         return view('login/login');
     }
+
+    public function register()
+    {
+        return view('login/register');
+    }
     
     public function index() : string 
     {

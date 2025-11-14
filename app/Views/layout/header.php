@@ -35,8 +35,7 @@
                 </ul>
                 <div class="d-flex">
                     <button onclick="window.location.href='<?= base_url('login') ?>'" class="btn btn-outline-primary me-2" type="button">Masuk</button>
-                    <button class="btn btn-primary me-2" type="button">Daftar</button>
-                </div>
+                    <button onclick="window.location.href='<?= base_url('register') ?>'" class="btn btn-outline-primary me-2" type="button">Daftar</button>
             </div>
         </div>
     </nav>

@@ -12,6 +12,7 @@ $routes->get('pages', 'Pages::index');
 
 // Halaman login
 $routes->get('/login', 'adminuser::login');
+$routes->get('/register', 'adminuser::register');
 
 //Adminuser
 
