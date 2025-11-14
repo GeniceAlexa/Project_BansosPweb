@@ -1,0 +1,19 @@
+CRITICAL - 2025-11-14 00:15:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/profil.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/profil.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('user/profil', [], true)
+ 3 APPPATH\Controllers\bansos.php(28): view('user/profil')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\bansos->profil()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bansos))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\PWEB2\\cip\\public\\index.php')
+DEBUG - 2025-11-14 00:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 00:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 00:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 00:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 00:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 00:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

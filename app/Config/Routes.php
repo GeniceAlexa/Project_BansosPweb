@@ -5,25 +5,23 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'pages::index');
-$routes->get('pages', 'pages::index');
 
+// Halaman utama
+$routes->get('/', 'Pages::index');
+$routes->get('pages', 'Pages::index');
+
+// Halaman login
+$routes->get('/login', 'bansos::index');
+
+// Halaman admin
 $routes->get('/admin', 'bansos::admin');
+$routes->get('/pengajuan', 'bansos::pengajuan');
 
+// CRUD Admin
+$routes->get('/admin/ubah/(:num)', 'bansos::ubah/$1');
+$routes->post('/admin/update/(:num)', 'bansos::update/$1');
+$routes->get('/admin/hapus/(:num)', 'bansos::hapus/$1');
 
-$routes->get('/login', 'bansos::index');
-
-
-//Data User
-$routes->get('/', 'pages::index');
-$routes->get('/user', 'pages::index');
-$routes->get('/user/ubah/(:num)', 'pages::ubah/$1');
-$routes->post('/user/update/(:num)', 'pages::update/$1');
-
+// Halaman user
 $routes->get('/profil', 'bansos::profil');
-$routes->get('/ubah', 'bansos::ubah');
-
-$routes->get('/login', 'bansos::index');
 $routes->get('/dokumentasi', 'bansos::dokum');
-
-

@@ -181,9 +181,6 @@
 </head>
 <body>
 
-    <?= $this->extend ('hal'); ?>
-    <?= $this->section ('content'); ?>
-
   <!-- Header -->
   <div class="bg-dark">
     <header class="d-flex justify-content-between align-items-center px-3 py-2" style="background-color:#1f6243;">
@@ -253,12 +250,6 @@
     </div>
 
     <div class="table-responsive">
-      <?php if (session()->getFlashdata('pesan')) : ?>
-                <div class="alert alert-success" role="alert">
-                    <?= session()->getFlashdata('pesan'); ?> 
-                </div>
-      <?php endif; ?>
-
       <table class="table align-middle">
         <thead>
           <tr>
@@ -271,33 +262,41 @@
           </tr>
         </thead>
         <tbody>
-  <?php $i = 1; foreach($user as $b): ?>
-  <tr>
-    <th scope="row"><?= $i++ ?></th>
-    <td><?= $b['Nama']; ?></td>
-    <td><?= $b['NIK']; ?></td>
-    <td><?= $b['status']; ?></td>
-    <td><?= $b['tanggal']; ?></td>
-    <td>
-      <a href="/user/ubah/<?= $b['id_user'] ?>" class="btn btn-warning btn-sm">✏️</a>
-      <form action="/user/<?= $b['id_user'] ?>" method="post" class="d-inline">
-          <?= csrf_field(); ?>
-          <input type="hidden" name="_method" value="DELETE">
-          <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Hapus?')">🗑️</button>
-      </form>
-    </td>
-  </tr>
-  <?php endforeach; ?>
-</tbody>
-
-         
-              <!-- <button class="btn btn-sm text-success border-0">✏️</button>
-              <button class="btn btn-sm text-danger border-0">🗑️</button> -->
+          <tr>
+            <td>101</td>
+            <td>Enzy Madona Ika Sofitri</td>
+            <td>3312345678910001</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>2025-01-27</td>
+            <td>
+              <button class="btn btn-sm text-success border-0">✏️</button>
+              <button class="btn btn-sm text-danger border-0">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Hendriyan Asyiq W.A</td>
+            <td>3312345678910001</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>2025-01-27</td>
+            <td>
+              <button class="btn btn-sm text-success border-0">✏️</button>
+              <button class="btn btn-sm text-danger border-0">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Genica Alexa Wibowo</td>
+            <td>3312345678910001</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>2025-01-27</td>
+            <td>
+              <button class="btn btn-sm text-success border-0">✏️</button>
+              <button class="btn btn-sm text-danger border-0">🗑️</button>
             </td>
           </tr>
         </tbody>
       </table>
-    <?= $this->endSection(); ?>
     </div>
   </div>
 

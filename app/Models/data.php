@@ -4,7 +4,7 @@
     
     use CodeIgniter\Model;
     
-    class data extends Model
+    class Data extends Model
     {
         protected $table = 'data_user';
         protected $primaryKey = 'id_user';
@@ -19,3 +19,4 @@
             return $this->where(['id_user' => $iddata])->first();
         }
     }
+
